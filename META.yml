@@ -25,7 +25,7 @@ optional_features: {}
 provides:
   Role::Inspector:
     file: lib/Role/Inspector.pm
-    version: 0.001
+    version: 0.002
 requires:
   Exporter::Shiny: 0
   Module::Runtime: 0
@@ -37,4 +37,4 @@ resources:
   homepage: https://metacpan.org/release/Role-Inspector
   license: http://dev.perl.org/licenses/
   repository: git://github.com/tobyink/p5-role-inspector.git
-version: 0.001
+version: 0.002
