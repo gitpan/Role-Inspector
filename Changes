@@ -6,6 +6,12 @@ Home page:    <https://metacpan.org/release/Role-Inspector>
 Bug tracker:  <http://rt.cpan.org/Dist/Display.html?Queue=Role-Inspector>
 Maintainer:   Toby Inkster (TOBYINK) <tobyink@cpan.org>
 
+0.003	2014-04-09
+
+ [ Test Suite ]
+ - Tests added for Moo::Role roles when Moose is in memory.
+ - Tests added for Role::Tiny and Moose::Role roles when Moo is in memory.
+
 0.002	2014-04-09
 
  [ Documentation ]

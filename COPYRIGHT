@@ -28,6 +28,7 @@ Files: README
  t/06rolebasic.t
  t/07moprole.t
  t/08customrole.t
+ t/09mooplusmoose.t
 Copyright: This software is copyright (c) 2014 by Toby Inkster.
 License: GPL-1.0+ or Artistic-1.0
 

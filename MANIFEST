@@ -21,6 +21,7 @@ t/05roletiny.t
 t/06rolebasic.t
 t/07moprole.t
 t/08customrole.t
+t/09mooplusmoose.t
 t/lib/Local/CustomRole.pm
 t/lib/Local/MooRole.pm
 t/lib/Local/MooseRole.pm

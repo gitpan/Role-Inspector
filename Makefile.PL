@@ -40,7 +40,7 @@ my $meta = {
                                      },
                       },
   "provides"       => {
-                        "Role::Inspector" => { file => "lib/Role/Inspector.pm", version => 0.002 },
+                        "Role::Inspector" => { file => "lib/Role/Inspector.pm", version => 0.003 },
                       },
   "release_status" => "stable",
   "resources"      => {
@@ -56,7 +56,7 @@ my $meta = {
                                         },
                         X_identifier => "http://purl.org/NET/cpan-uri/dist/Role-Inspector/project",
                       },
-  "version"        => 0.002,
+  "version"        => 0.003,
 };
 
 my %dynamic_config;
