@@ -54,9 +54,12 @@ DESCRIPTION
 
         *   `api` - an arrayref of method names required/provided by the role
 
+        *   `provides` and `requires` - the same as `api`, but split into
+            lists of methods provided and required by the role
+
         *   `meta` - a metaobject for the role (e.g. a Moose::Meta::Role
             object). This key may be absent if the role implementation does
-            not provide a metaobject.
+            not provide a metaobject
 
         This function may be exported, but is not exported by default. If you
         do not wish to export it, you may call it as a class method:
@@ -74,14 +77,10 @@ DESCRIPTION
               my $r = shift;
               return unless My::Implementation::is_role($r);
               return {
-                 name  => $r,
-                 type  => 'My::Implementation',
-                 api   => [
-                    sort(
-                       @{ My::Implementation::required_methods($r) },
-                       @{ My::Implementation::provided_methods($r) },
-                    )
-                 ],
+                 name     => $r,
+                 type     => 'My::Implementation',
+                 provides => [ sort(@{My::Implementation::provides($r)}) ],
+                 requires => [ sort(@{My::Implementation::requires($r)}) ],
               };
            };
 
@@ -95,6 +94,9 @@ DESCRIPTION
         You can do the `push` thing without having loaded Role::Inspector.
         This makes it suitable for doing inside My::Implementation itself,
         without introducing an additional dependency on Role::Inspector.
+
+        Note that if you don't provide all of `provides`, `requires`, and
+        `api`, Role::Inspector will attempt to guess the missing parts.
 
 CAVEATS
     *   It is difficult to distinguish between Moo::Role and Role::Tiny roles.
