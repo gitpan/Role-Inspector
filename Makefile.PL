@@ -7,7 +7,7 @@ my $meta = {
   "abstract"       => "introspection for roles",
   "author"         => ["Toby Inkster (TOBYINK) <tobyink\@cpan.org>"],
   "dynamic_config" => 0,
-  "generated_by"   => "Dist::Inkt::Profile::TOBYINK version 0.015, CPAN::Meta::Converter version 2.120921",
+  "generated_by"   => "Dist::Inkt::Profile::TOBYINK version 0.023, CPAN::Meta::Converter version 2.140640",
   "keywords"       => [],
   "license"        => ["perl_5"],
   "meta-spec"      => {
@@ -40,7 +40,7 @@ my $meta = {
                                      },
                       },
   "provides"       => {
-                        "Role::Inspector" => { file => "lib/Role/Inspector.pm", version => 0.004 },
+                        "Role::Inspector" => { file => "lib/Role/Inspector.pm", version => 0.005 },
                       },
   "release_status" => "stable",
   "resources"      => {
@@ -54,9 +54,9 @@ my $meta = {
                                           url  => "git://github.com/tobyink/p5-role-inspector.git",
                                           web  => "https://github.com/tobyink/p5-role-inspector",
                                         },
-                        X_identifier => "http://purl.org/NET/cpan-uri/dist/Role-Inspector/project",
+                        x_identifier => "http://purl.org/NET/cpan-uri/dist/Role-Inspector/project",
                       },
-  "version"        => 0.004,
+  "version"        => 0.005,
 };
 
 my %dynamic_config;
